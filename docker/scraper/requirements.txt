@@ -1,0 +1,6 @@
+pandas
+beautifulsoup4
+requests
+lxml
+requests-html
+lxml[html_clean]
