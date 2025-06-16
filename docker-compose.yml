@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  scraper:
+    build:
+      context: .
+      dockerfile: docker/scraper/Dockerfile
+    container_name: fbref_scraper
+    volumes:
+      - ./data:/app/data
+    restart: "no"
+
+  transformer:
+    build:
+      context: .
+      dockerfile: docker/spark/Dockerfile
+    container_name: fbref_transformer
+    volumes:
+      - ./data:/app/data
+    depends_on:
+      scraper:
+        condition: service_completed_successfully
+    restart: "no"
