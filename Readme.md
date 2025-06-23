@@ -47,8 +47,7 @@ Esto:
 
 ## 📌 Pendientes / próximos pasos
 
-- Métricas avanzadas por equipo y jornada (hasta donde nos de el dataset en realidad)
-- Visualización de rachas y rendimiento
+- Tablero de visualización
 - Publicación automática de KPIs por fecha en redes
 - Enlace con otras fuentes como Understat para xG (Si es que podemos hacerle scraping jeje)
 
