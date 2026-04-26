@@ -1,0 +1,24 @@
+project:
+  name: futbol-analitico
+  competition_id: PER_LIGA1
+  competition_name: Liga 1
+  country: Peru
+  season: 2026
+
+sources:
+  promediosinfo_competition: "https://promediosinfo.com/liga/peru.html"
+  promediosinfo_show_round: "https://promediosinfo.com/showRound.html"
+  promediosinfo_base: "https://promediosinfo.com"
+
+scraping:
+  league_id: 281
+  round_from: 1
+  round_to: 17
+  timeout_seconds: 30
+  user_agent: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+
+paths:
+  raw: "data/raw"
+  interim: "data/interim"
+  audit: "data/audit"
+  curated: "data/curated"

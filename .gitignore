@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+logs/
+
+# Data outputs - keep folder structure only
+data/raw/*
+data/interim/*
+data/audit/*
+data/curated/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/audit/.gitkeep
+!data/curated/.gitkeep
+
+# Notebook generated outputs
+outputs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Docker local artifacts
+docker-data/
